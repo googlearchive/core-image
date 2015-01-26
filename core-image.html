@@ -202,7 +202,7 @@ Examples:
       if (this.preload) {
         if (this.fade) {
           if (!this._placeholderEl) {
-            this._placeholderEl = this.shadowRoot.querySelector('#placeholder');
+            this._placeholderEl = this.shadowRoots["core-image"].querySelector('#placeholder');
           }
           this._placeholderEl.style.backgroundSize = this.sizing;
           this._placeholderEl.style.backgroundPosition = this.sizing ? this.position : null;
