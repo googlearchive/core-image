@@ -17,6 +17,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   background-color: inherit;
   opacity: 1;
 }
+
 #placeholder.fadein {
   transition: opacity 0.5s linear;
   opacity: 0;
