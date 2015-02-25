@@ -66,10 +66,10 @@ Examples:
 <template>
   <link rel="stylesheet" href="core-image.css">
   <template if="{{!sizing}}">
-    <img id="img">
+    <img id="img" role="none">
   </template>
   <template if="{{preload && fade}}">
-    <div id="placeholder" role="img" fit></div>
+    <div id="placeholder" fit></div>
   </template>
   <content></content>
 </template>
@@ -141,6 +141,19 @@ Examples:
        * @default null
        */
       placeholder: null,
+
+      /**
+       * ARIA role for this element. It defaults to `img` since this element is
+       * intended to be behave like an `<img>`.
+       *
+       * @attribute role
+       * @type string
+       * @default "img"
+       */
+      role: {
+        reflect: true,
+        value: "img"
+      },
 
       /**
        * When `preload` is true, setting `fade` to true will cause the image to
