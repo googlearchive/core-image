@@ -11,12 +11,14 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   display: inline-block;
   overflow: hidden;
   position: relative;
+  line-height: 0;
 }
 
 #placeholder {
   background-color: inherit;
   opacity: 1;
 }
+
 #placeholder.fadein {
   transition: opacity 0.5s linear;
   opacity: 0;
